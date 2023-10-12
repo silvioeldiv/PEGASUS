@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Document</title>
+</head>
+<!--<body>
+    
+    <header class="container">
+        
+        <div class="conta">
+            <img src="img.jpg" alt="" width="400px">
+            <img  src="log.png" alt="" class="img">
+            <nav class="nava">
+                <a href="" class="logo">inicia sesion </a>
+            </nav>
+            <hr>
+        </div>
+         
+    </header>
+    <div class="divo">
+        <p>Loreernatur tenetur numquam, accusadipisci!</p>
+        
+    </div>
+    <div class="texto">
+        <a href="#" class="grap">empezar</a>
+    </div>
+</body>-->
+
+<body>
+    <!--<ul class="nav">
+        <li class="nav-item"><a href="#">Inicio</a></li>
+        <li class="nav-item"><a href="#">Inventario</a></li>
+        <li class="nav-item"><a href="#">Ventas</a></li>
+        <li class="nav-item"><a href="#">Facturación</a></li>
+        <li class="nav-item"><a href="#">Reportes</a></li>
+        <li class="nav-item"><a href="#">Configuración</a></li>
+        <li class="nav-item"><a href="#">Ayuda y Soporte</a></li>
+        <li class="nav-item"><a href="contacto.html">Contacto</a></li>
+        <li class="nav-item"><a href="login.html">login</a></li>
+        <li class="nav-item"><input type="text" class="search-input" placeholder="buscar pelicula...">
+            <button class="search-button">Buscar</button></li>
+        
+    </ul>-->
+    <ul class="nav">
+        <li class="nav-item"><a href="#">Inicio</a></li>
+        <li class="nav-item">
+            <a href="#">Inventario</a>
+            <ul class="sub-menu">
+                <li><a href="inventario.html">Mercadería</a></li>
+                <li><a href="#">Proveedores</a></li>
+            </ul>
+        </li>
+        <li class="nav-item">
+            <a href="#">Ventas</a>
+            <ul class="sub-menu">
+                <li><a href="#">Registro de Ventas</a></li>
+                <li><a href="#">Registro de Alquileres</a></li>
+            </ul>
+        </li>
+        <li class="nav-item">
+            <a href="#">Facturación</a>
+            <ul class="sub-menu">
+                <li><a href="proveedor.html">Facturas de Compra</a></li>
+                <li><a href="#">Facturas de Venta</a></li>
+            </ul>
+        </li>
+        <li class="nav-item">
+            <a href="#">Reportes</a>
+            <ul class="sub-menu">
+                <li><a href="#">Reporte de Inventario</a></li>
+                <li><a href="#">Reporte de Ventas</a></li>
+            </ul>
+        </li>
+        <li class="nav-item"><a href="#">Configuración</a></li>
+        <li class="nav-item"><a href="#">Ayuda y Soporte</a></li>
+        <li class="nav-item"><a href="contacto.html">Contacto</a></li>
+        <li class="nav-item"><a href="login.html">Login</a></li>
+    </ul>
+
+    <script>
+        // JavaScript para mostrar/ocultar el menú desplegable
+        const nav = document.querySelector('.nav');
+        nav.addEventListener('mouseover', (event) => {
+            if (event.target.classList.contains('nav-item')) {
+                const subMenu = event.target.querySelector('.sub-menu');
+                if (subMenu) {
+                    subMenu.style.display = 'block';
+                }
+            }
+        });
+    
+        nav.addEventListener('mouseout', (event) => {
+            if (event.target.classList.contains('nav-item')) {
+                const subMenu = event.target.querySelector('.sub-menu');
+                if (subMenu) {
+                    subMenu.style.display = 'none';
+                }
+            }
+        });
+    </script>
+    
+
+    
+
+    <div class="portada">
+        <h1>Bienvenido a Nuestra Página de  PEGASUS SAC</h1>
+        <p>Descubre las mejores películas y series de todos los tiempos.</p>
+        <button>Ver Ahora</button>
+    </div>
+    <div class="cuadro-grid">
+        <div class="cuadro">
+            <img src="log.png" alt="Dibujo 1">
+        </div>
+
+        <div class="cuadro">
+            <img src="log.png" alt="Dibujo 2">
+        </div>
+
+        <div class="cuadro">
+            <img src="log.png" alt="Dibujo 3">
+        </div>
+
+        <div class="cuadro">
+            <img src="log.png" alt="Dibujo 4">
+        </div>
+
+        <div class="cuadro">
+            <img src="log.png" alt="Dibujo 5">
+        </div>
+
+        <div class="cuadro">
+            <img src="log.png" alt="Dibujo 6">
+        </div>
+    </div>
+    <div class="reproductor-grid">
+        <div class="miniatura">
+            <video controls>
+                <source src="https://www.filmelier.com/mx/film/23194/16-calles" type="video/mp4">
+                Tu navegador no admite la reproducción de videos.
+            </video>
+            <button class="reproducir-button">&#9658;</button>
+        </div>
+
+        <div class="miniatura">
+            <video controls>
+                <source src="pelicula2.mp4" type="video/mp4">
+                
+            </video>
+            <button class="reproducir-button">&#9658;</button>
+        </div>
+
+        <div class="miniatura">
+            <video controls>
+                <source src="pelicula3.mp4" type="video/mp4">
+                Tu navegador no admite la reproducción de videos.
+            </video>
+            <button class "reproducir-button">&#9658;</button>
+        </div>
+    </div>
+  
+<section>
+    <img src="pelicula.avif" alt="">
+    <img src="Action shot of john rambo in a jungle.jpg" alt="">
+    <img src="Brandmark - make your logo in minutes - Google Chrome 9_10_2023 13_58_21 (2).png" alt="">
+    <img src="captain america with a shield made out of groot.jpg" alt="">
+    <img src="harry potter.jpg" alt="">
+    <img src="pelicula.avif" alt="">
+    <img src="pelicula.avif" alt="">
+    <img src="pelicula.avif" alt="">
+    <img src="pelicula.avif" alt="">
+    <img src="pelicula.avif" alt="">
+    <img src="pelicula.avif" alt="">
+    <img src="pelicula.avif" alt="">
+</section>
+<video id="myVideo" width="640" height="360" controls>
+    <source src="https://www.justwatch.com/co/pelicula/operacion-kandahar" type="video/mp4">
+    
+  </video>
+  <!-- NAV -->
+  <div class="nav-wrapper">
+    <div class="container">
+        <div class="nav">
+            <a href="./index.html" class="logo">
+                <i class='bx bx-movie-play bx-tada main-color'></i>Pe<span class="main-color">lic</span>ulas
+            </a>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./Peliculas.html">Peliculas</a></li>
+                <li><a href="#">Series</a></li>
+                <li><a href="./acercaDe.html">Acerca de</a></li>
+                <li>
+                    <a href="login.html" class="btn btn-hover">
+                        <span>Iniciar sesion</span>
+                    </a>
+                </li>
+            </ul>
+            <!-- MOBILE MENU TOGGLE -->
+            <div class="hamburger-menu" id="hamburger-menu">
+                <div class="hamburger"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END NAV -->
+
+<!-- HERO SECTION -->
+
+
+
+</html>

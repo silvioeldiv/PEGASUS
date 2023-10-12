@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inventario</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="inventory">
+        <h1>Mercadería</h1>
+        <table>
+            <tr>
+                <th>Nombre</th>
+                <th>Categoría</th>
+                <th>Formato</th>
+                <th>Stock</th>
+                <th>Precio</th>
+                <th>Acciones</th>
+            </tr>
+            <tr>
+                <td>Producto A</td>
+                <td>ESTRENO</td>
+                <td>DVD</td>
+                <td>50</td>
+                <td>$20.00</td>
+                <td>
+                    <a href="#">Editar</a> |
+                    <a href="#">Eliminar</a>
+                </td>
+            </tr>
+            <!-- Agregar más filas según sea necesario -->
+        </table>
+
+        <h1>Proveedores</h1>
+        <table>
+            <tr>
+                <th>Nombre</th>
+                <th>Dirección</th>
+                <th>Contacto</th>
+                <th>Acciones</th>
+            </tr>
+            <tr>
+                <td>Proveedor XYZ</td>
+                <td>Calle Proveedor, Ciudad</td>
+                <td>proveedor@ejemplo.com</td>
+                <td>
+                    <a href="#">Editar</a> |
+                    <a href="#">Eliminar</a>
+                </td>
+            </tr>
+            <!-- Agregar más filas según sea necesario -->
+        </table>
+
+        <h2>Agregar nueva Mercadería</h2>
+        <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <label for="categoria">Categoría:</label>
+            <select id="categoria" name="categoria" required>
+                <option value="ESTRENO">ESTRENO</option>
+                <option value="NORMAL">NORMAL</option>
+            </select>
+            <label for="formato">Formato:</label>
+            <input type="text" id="formato" name="formato" required>
+            <label for="stock">Stock:</label>
+            <input type="number" id="stock" name="stock" required>
+            <label for="precio">Precio:</label>
+            <input type="text" id="precio" name="precio" required>
+            <input type="submit" value="Agregar">
+        </form>
+
+        <h2>Agregar nuevo Proveedor</h2>
+        <form>
+            <label for="nombreProveedor">Nombre:</label>
+            <input type="text" id="nombreProveedor" name="nombreProveedor" required>
+            <label for="direccion">Dirección:</label>
+            <input type="text" id="direccion" name="direccion" required>
+            <label for="contacto">Contacto:</label>
+            <input type="text" id="contacto" name="contacto" required>
+            <input type="submit" value="Agregar">
+        </form>
+    </div>
+</body>
+</html>

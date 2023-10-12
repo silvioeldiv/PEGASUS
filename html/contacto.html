@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contacto - Academia X</title>
+    <style>
+        /* Estilos para la página de contacto */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .contacto-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .preguntas-frecuentes {
+            text-align: center;
+        }
+
+        .preguntas-frecuentes a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        .mensaje-form {
+            margin-top: 20px;
+        }
+
+        .mensaje-form label {
+            display: block;
+            font-weight: bold;
+        }
+
+        .mensaje-form textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .mensaje-form button {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input{
+            width: 600px;
+            height: 40px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="contacto-container">
+        <h2>Envíanos un mensaje</h2>
+        <p>Por favor, considera revisar la sección de <a href="preguntas-frecuentes.html">Preguntas Frecuentes</a> que puede tener tu respuesta.</p>
+        
+        <div class="mensaje-form">
+            <form>
+                <label for="email">email</label>
+                <input type="text">
+               <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                <button type="submit">Enviar Mensaje</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Factura de Compra</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        #header {
+            text-align: center;
+        }
+
+        #header h1 {
+            font-size: 24px;
+        }
+
+        #invoice {
+            border: 1px solid #000;
+            padding: 20px;
+        }
+
+        .info {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .info div {
+            width: 48%;
+        }
+
+        .invoice-details {
+            margin-top: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        .total {
+            margin-top: 20px;
+        }
+
+        .terms {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h1>Factura de Compra</h1>
+    </div>
+
+    <div id="invoice">
+        <div class="info">
+            <div>
+                <h2>Información del Proveedor</h2>
+                <p>Nombre o Razón Social: Proveedor XYZ</p>
+                <p>Dirección: Calle Proveedor, Ciudad</p>
+                <p>Número de ID Fiscal: 123456789</p>
+            </div>
+            <div>
+                <h2>Información de la Empresa Compradora</h2>
+                <p>Nombre o Razón Social: Mi Empresa S.A.</p>
+                <p>Dirección: Calle Principal, Ciudad</p>
+                <p>Número de ID Fiscal: 987654321</p>
+            </div>
+        </div>
+
+        <div class="invoice-details">
+            <h2>Detalles de la Transacción</h2>
+            <p>Fecha de Emisión: 10 de Octubre de 2023</p>
+            <p>Número de Factura: 00123</p>
+            <p>Fecha de Transacción: 10 de Octubre de 2023</p>
+            <p>Términos de Pago: 30 días</p>
+            <p>Condiciones de Venta: Venta al Contado</p>
+        </div>
+
+        <h2>Descripción de los Productos o Servicios</h2>
+        <table>
+            <tr>
+                <th>Descripción</th>
+                <th>Cantidad</th>
+                <th>Precio Unitario</th>
+                <th>Total por Línea</th>
+            </tr>
+            <tr>
+                <td>Producto A</td>
+                <td>5</td>
+                <td>$20.00</td>
+                <td>$100.00</td>
+            </tr>
+            <tr>
+                <td>Producto B</td>
+                <td>3</td>
+                <td>$15.00</td>
+                <td>$45.00</td>
+            </tr>
+        </table>
+
+        <div class="total">
+            <p>Subtotal: $145.00</p>
+            <p>Impuestos (12%): $17.40</p>
+            <p>Total: $162.40</p>
+        </div>
+
+        <div class="terms">
+            <h2>Notas Adicionales</h2>
+            <p>Cualquier información adicional relevante.</p>
+            <p>Instrucciones especiales o términos adicionales acordados.</p>
+        </div>
+    </div>
+</body>
+</html>
